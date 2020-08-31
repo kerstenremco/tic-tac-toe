@@ -1,5 +1,5 @@
 # tic-tac-toe
- A pure javascript tic-tac-toe game
+ A pure javascript tic-tac-toe game.
  Live demo: [https://dev.remcokersten.nl/tic-tac-toe/](https://dev.remcokersten.nl/tic-tac-toe/)
  
  ## Minimax algoritm
