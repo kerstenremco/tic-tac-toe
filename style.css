@@ -1,0 +1,91 @@
+body {
+  background-image: url("/assets/pattern.jpg");
+}
+
+.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.menu {
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 50px;
+}
+
+h2{
+  font-size: 60px;
+}
+
+button {
+  background-color: white;
+  color: black;
+  font-size: 40px;
+  border: 1px black solid;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40vw;
+  height: 40vh;
+  min-width: 600px;
+  min-height: 400px;
+  background-color: white;
+}
+
+.grid div {
+  flex: 1 1 33%;
+  border: 1px black solid;
+}
+
+.grid .x,
+.grid.xturn div:not(.x):not(.o):hover {
+  background: url('/assets/x.svg');
+}
+
+.grid .o,
+.grid.oturn div:not(.x):not(.o):hover {
+  background: url('/assets/o.svg');
+}
+
+.grid.xturn div:not(.x):not(.o):hover,
+.grid.oturn div:not(.x):not(.o):hover {
+  background-color: lightgreen;
+}
+
+.grid .x,
+.grid .o,
+.grid.xturn div:not(.x):not(.o):hover,
+.grid.oturn div:not(.x):not(.o):hover {
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
+
+.hide {
+  display: none;
+}
