@@ -1,5 +1,5 @@
 body {
-  background-image: url("/assets/pattern.jpg");
+  background-image: url("assets/pattern.jpg");
 }
 
 .main {
@@ -23,7 +23,7 @@ body {
   padding: 70px 50px;
 }
 
-h2{
+h2 {
   font-size: 60px;
 }
 
@@ -64,12 +64,12 @@ button:hover {
 
 .grid .x,
 .grid.xturn div:not(.x):not(.o):hover {
-  background: url('/assets/x.svg');
+  background: url("assets/x.svg");
 }
 
 .grid .o,
 .grid.oturn div:not(.x):not(.o):hover {
-  background: url('/assets/o.svg');
+  background: url("assets/o.svg");
 }
 
 .grid.xturn div:not(.x):not(.o):hover,
